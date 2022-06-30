@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("imagens/fundo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow-x: hidden;
+}
+#titulo h1{
+    padding-top: 20%;
+    font-family: 'ABeeZee'; 
+    color: #000000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+}
+#botoes{
+    padding-top: 4vw;
+    text-align: center;
+}
+#login{
+    margin-bottom: 2vw;
+}
+#registrar{
+    margin-bottom: 2vw;
+}
+#pular{
+    margin-bottom: 2vw;
+}

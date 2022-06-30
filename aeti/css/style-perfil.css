@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+#nome{
+    margin-left: 20%;
+    margin-top: 2vw;
+}
+#img-perfil{
+    margin-top: 2vw;
+    margin-left: 2vw;
+    border-radius: 100px;
+    float: left;
+}
+#eu{
+    margin-top: 2vw;
+    text-align: center;
+}
+#desc{
+    text-justify: auto;
+    text-align: center;
+    font-size: 25px;
+}
+#tag{
+    padding-top: 0.8vh;
+    text-align: center;
+}
+#lvl{
+    text-align: center;
+}
+#conquista{
+    text-align: center;
+}
+#medalha{
+    margin-left: 5vw;
+    width: 4vw;
+    float: left;
+}
+#add{
+   margin-left: 10vw;
+   width: 3vw;
+   text-align: center;
+}
+#msg{
+   margin-left: 10vw;
+   width: 3vw;
+   text-align: center;
+}
+@media only screen and (max-width: 575px){
+    #add{
+        width: 8vw;
+        margin-left: 25vw;
+    }
+    #msg{
+        width: 8vw;
+        margin-left: 25vw;
+    }
+}

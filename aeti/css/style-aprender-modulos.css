@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 20px;
+}
+#titulo{
+    margin-top: 2vw;
+    text-align: center;
+}
+#video{
+    width: 80%;
+    height: 90%;
+    left: 10%;
+    position: center;
+    text-align: center;
+    margin-bottom: 0;
+}
+#modulos{
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    text-align: center;
+}
+li{
+    margin-left: 0;
+    width: 50%;
+    left: 24%;
+}
+#anterior{
+    float: left;
+}

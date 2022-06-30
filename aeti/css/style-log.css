@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: AbeeZee;
+    text-decoration: none;
+    font-size: 20px;
+}
+html{
+    background-color: #212529;
+}
+#secao{
+    border-radius: 1vw;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    margin-top: 15%;
+    width: 50%;
+    margin-left: 25%;
+    padding: 2vw;
+}
+#txt{
+    text-align: center;
+    padding-bottom: 1vw;
+}
+#botao{
+    padding-top: 2vw;
+}

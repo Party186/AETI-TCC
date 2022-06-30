@@ -1,0 +1,20 @@
+#duvidas{
+    text-align: center;
+    margin-bottom: 3vw;
+    margin-top: 3vw;
+}
+#perguntas{
+    text-align: center;
+}
+#img{
+    height: 10vw;
+}
+@media only screen and (max-width: 575px){
+    #img{
+        height: 35vw;
+    }
+}
+#imagem-canais{
+    height: 100%;
+    width: 100%;
+}

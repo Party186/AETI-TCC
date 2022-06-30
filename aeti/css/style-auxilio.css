@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+}
+h1{
+    padding-top: 2vw;
+}
+h3{
+    padding-top: 3vw;
+}
+#ajuda{
+    margin-top: 2vw;
+    border: 1px solid black;
+    border-radius: 1vw;
+}
+#ajuda:hover{
+    animation: colorRotate 6s linear 0s infinite;
+}
+
+@keyframes colorRotate {
+    from {
+      color: #6666ff;
+    }
+    10% {
+      color: #0099ff;
+    }
+    50% {
+      color: #00ff00;
+    }
+    75% {
+      color: #ff3399;
+    }
+    100% {
+      color: #6666ff;
+    }
+}
+#peca{
+  margin-bottom: 5vw;
+}
