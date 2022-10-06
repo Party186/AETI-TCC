@@ -1,19 +1,19 @@
 <?php 
 session_start();
-require DIR_PATH.'\conexao.php';
+require DIR_PATH.'/conexao.php';
 $usuario = mysqli_real_escape_string($connect, trim($_POST['usuario']));
-$senha = mysqli_real_escape_string($connect, trim($_POST['senha']));
+$senha = mysqli_real_escape_string($connect, trim(md5($_POST['senha'])));
 $nome = mysqli_real_escape_string($connect, trim($_POST['nome']));
 $sobrenome = mysqli_real_escape_string($connect, trim($_POST['sobrenome']));
-$email = mysqli_real_escape_string($connect, trim(md5($_POST['email'])));
+$email = mysqli_real_escape_string($connect, trim($_POST['email']));
 
 $sql = "select count(*) as total from usuario where usuario = '$usuario'";
 $result = mysqli_query($connect, $sql);
 $row = mysqli_fetch_assoc($result);
 
 if($row['total'] == 1) {
+	header('Location: http://aeti.infinityfreeapp.com/registrar.php');
 	$_SESSION['usuario_existe'] = true;
-	header('Location: login.php');
 	exit;
 }
 
@@ -25,6 +25,6 @@ if($connect->query($sql) === TRUE) {
 
 $connect->close();
 
-header('Location: login.php');
+header('Location: http://aeti.infinityfreeapp.com/login.php');
 exit;
 ?>
