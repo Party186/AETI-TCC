@@ -1,6 +1,9 @@
 <?php
-session_start(); 
+session_start();
+error_reporting(0);
+require "config.php";
 if(!isset($_SESSION['autenticado']) ||  $_SESSION['autenticado'] != 'sim'){
-  header ('Location: login.php?login=erro');
+  header ("Location: http://localhost/aeti/login.php?login=erro");
+  $_SESSION['autenticado'] = "nao";
 }
 ?>

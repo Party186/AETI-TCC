@@ -7,6 +7,7 @@
 }
 #titulo{
     margin-top: 2vw;
+    margin-bottom: 2vw;
     text-align: center;
 }
 #video{
@@ -22,11 +23,10 @@
     margin-bottom: 2vw;
     text-align: center;
 }
-li{
-    margin-left: 0;
-    width: 50%;
-    left: 24%;
+#img-card{
+    height: 20vw;
 }
-#anterior{
-    float: left;
+#div-bot{
+    width: 99vw;
+    padding: 0%;
 }

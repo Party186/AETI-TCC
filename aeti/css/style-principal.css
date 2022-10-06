@@ -23,6 +23,8 @@ body{
 }
 #perfil{
   color: white;
+  margin-left: 0;
+  float: left;
 }
 #perfil:hover{
   color: #4cc482;
@@ -82,4 +84,16 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background-color: #212529;
+}
+#nav-config{
+  height:2vw;
+}
+#ajude{
+  text-align: center;
+  margin-top: 2vw;
+}
+#btn-responder{
+  margin-bottom: 2vw;
+}
+@media only screen and (min-width: 992px){ 
 }

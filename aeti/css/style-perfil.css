@@ -4,8 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-#nome{
-    margin-left: 20%;
+#nome-perfil{
     margin-top: 2vw;
 }
 #img-perfil{
@@ -33,28 +32,33 @@
 #conquista{
     text-align: center;
 }
-#medalha{
-    margin-left: 5vw;
-    width: 4vw;
-    float: left;
-}
 #add{
    margin-left: 10vw;
    width: 3vw;
+   height: 2vw;
    text-align: center;
 }
 #msg{
    margin-left: 10vw;
    width: 3vw;
+   height: 2vw;
    text-align: center;
+}
+#deslogar{
+    left: 68%;
+}
+#hamburguer{
+    display: none;
 }
 @media only screen and (max-width: 575px){
     #add{
         width: 8vw;
+        height: 8vw;
         margin-left: 25vw;
     }
     #msg{
         width: 8vw;
+        height: 8vw;;
         margin-left: 25vw;
     }
 }

@@ -1,5 +1,7 @@
 <?php 
-session_start();
+  session_start();
+  require "config.php";
+  error_reporting(0);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,18 +16,28 @@ session_start();
     <body>
         <div id="secao">
           <h2 id="txt">Registre-se</h2>
+          <?php 
+            if($_SESSION['usuario_existe']){
+              ?>
+              <div class="alert alert-danger" role="alert">
+                O usuário já existe
+              </div>
+              <?php
+              unset($_SESSION['usuario_existe']);
+            }
+          ?>
           <form method="post" action="cadastrar.php" class="row g-3">
             <div class="col-md-4">
               <label for="validationDefault01" class="form-label">Nome</label>
-              <input name="nome" type="text" class="form-control" id="validationDefault01" value="" required>
+              <input name="nome" type="text" class="form-control" id="validationDefault01" value="" maxlength="30" required>
             </div>
             <div class="col-md-4">
               <label for="validationDefault02" class="form-label">Sobrenome</label>
-              <input name="sobrenome" type="text" class="form-control" id="validationDefault02" value="" required>
+              <input name="sobrenome" type="text" class="form-control" id="validationDefault02" value="" maxlength="80" required>
             </div>
             <div class="col-md-4">
               <label for="validationDefault02" class="form-label">Email</label>
-              <input name="email" type="text" class="form-control" id="validationDefault02" value="" required>
+              <input name="email" type="text" class="form-control" id="validationDefault02" value="" maxlength="100" required>
             </div>
             <div class="col-md-4">
               <label for="validationDefaultUsername" class="form-label">Usuário</label>
@@ -36,7 +48,7 @@ session_start();
             </div>
             <div class="col-md-6">
               <label for="validationDefault02" class="form-label">Senha</label>
-              <input name="senha" type="password" class="form-control" id="validationDefault02" value="" required>
+              <input name="senha" type="password" class="form-control" id="validationDefault02" value="" maxlength="100" required>
             </div>
             <div class="col-12">
               <div class="form-check">
@@ -45,10 +57,10 @@ session_start();
                   Aceite os termos de condição!
                 </label>
               </div>
+              <a href="login.php"><h10>Já tem uma conta? Entre aqui</h10></a>
             </div>
             <div class="col-12">
-              <button name="botao-s" class="btn btn-primary" type="submit">Registar</button>
-              
+              <button id="botao-s" name="botao-s" class="btn btn-primary" type="submit">Registar</button>
             </div>
           </form>
         </div>

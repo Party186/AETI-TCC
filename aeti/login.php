@@ -1,5 +1,7 @@
 <?php 
-session_start();
+  require "config.php";
+  error_reporting(0);
+  session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,6 +16,16 @@ session_start();
   <body>
     <div id="secao">
         <h2 id="txt">Entre para continuar</h2>
+        <?php 
+            if($_SESSION['loginErro']){
+              ?>
+              <div class="alert alert-danger" role="alert">
+                Usuário ou senha incorretos ou não existem
+              </div>
+              <?php
+              unset($_SESSION['loginErro']);
+            }
+          ?>
         <form action="valida_login.php" method="post">
           <div class="col-md-12">
             <label for="validationDefault01" class="form-label">Usuário</label>
@@ -27,6 +39,7 @@ session_start();
             <button class="btn btn-primary" type="submit">Entrar</button>
           </div>
         </form>
+        <a href="registrar.php"><h10>Não possui uma conta? Cadastre-se aqui!</h10></a>
     </div>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>

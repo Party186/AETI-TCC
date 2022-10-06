@@ -4,7 +4,6 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style-principal.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mukta:wght@300&display=swap" rel="stylesheet">
@@ -12,7 +11,7 @@
     <body>
       <?php 
       require "config.php";
-      include DIR_PATH."/nav.php";
+      include DIR_PATH."/template/nav.php";
       ?>
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
           <div class="carousel-indicators">
@@ -48,7 +47,7 @@
           <h1 id="quem">Objetivos do projeto</h1>
         </div>
         <br>
-        <div id="card" class="row row-cols-1 row-cols-md-3 g-4">
+        <div id="card" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
           <div class="col">
             <div class="card h-100">
               <img id="img-card" src="https://conceitos.com/wp-content/uploads/tecnologia/Programacao.jpg" class="card-img-top" alt="...">
@@ -62,8 +61,8 @@
             <div class="card h-100">
               <img id="img-card" src="https://cartpanda.com/wp-content/uploads/2020/11/image-15.jpeg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Disponibilizar um chat relacionado a programação</h5>
-                <p class="card-text">Proporcionar um chat onde seja possível o contato de programadores com outros programadores, para que ocorra uum auxílio entre os mesmos.</p>
+                <h5 class="card-title">Disponibilizar cursos básicos e avançados</h5>
+                <p class="card-text">Proporcionar cursos básicos (feitos pelos desenvolvedores do projeto) e cursos avançados disponibilizados pela Escola Técnica Estadual Monteiro Lobato com parceria à profissionais da área!</p>
               </div>
             </div>
           </div>
@@ -98,12 +97,11 @@
             <div class="card h-100">
               <img id="img-card" src="https://s2.glbimg.com/a5PD_-YSkGgff6C0tCBXPvrBUoA=/620x430/e.glbimg.com/og/ed/f/original/2022/05/09/art-rachen-yjpjld3c9bu-unsplash.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Sistema de recompensas para usuários</h5>
-                <p class="card-text">Sistema de moedas do site, onde você consegue colocar seus erros e outras pessoas são recomnpensadas com moedas, onde futuramente gerarão recompensas.</p>
+                <h5 class="card-title">Sistema de doações e cursos ao vivo pagos</h5>
+                <p class="card-text">Sistema qual visará proporcionar conteúdos de alta qualidade através de doações para o contratamento de profissionais realizarem palestras ao vivo.</p>
               </div>
             </div>
           </div>
         </div>
     </body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </html>

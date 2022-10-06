@@ -9,12 +9,45 @@
 #img{
     height: 10vw;
 }
+#imagem-canais{
+    height: 100%;
+    width: 100%;
+}
+#mais-perguntas{
+    text-align: center;
+}
+
+#secao-frontback{
+    margin-top: 2vw;
+}
+
+#img-bakcf{
+    height: 20vw;
+}
+
+#button{
+    
+}
+
+#txt1-backf{
+    text-align: center;
+    margin-top: 2vw;
+}
+
 @media only screen and (max-width: 575px){
     #img{
         height: 35vw;
     }
 }
-#imagem-canais{
-    height: 100%;
-    width: 100%;
+
+@media only screen and (max-width: 575px){
+    #img-bakcf{
+        height: 50vw;
+    }
+}
+
+@media only screen and (max-width: 767px){
+   .card{
+    margin-bottom: 5vw;
+   }
 }
